@@ -7,7 +7,6 @@
 /* main */
 /* section business */
 #innovative-business{
-  height: 30vh;
   background-color: #f3f5f9;
 }
 .section-title{
@@ -28,21 +27,24 @@
   align-content: center;
 }
 .sponsor-img{
-  flex-basis: calc((100% / 6) -20px);
   align-content: center;
 }
 .sponsor-img:not(:last-child){
   margin-right: 20px;
 }
-
 .sponsor-img img{
-  max-width: 100%;
+  width: 100%;
 }
 .stories{
+  display: block;
   text-align: center;
   text-decoration: none;
+  margin-top: 20px;
+  font-size: 20px;
 }
-
+.stories i{
+  vertical-align: middle;
+}
 
 
 
@@ -52,12 +54,20 @@
 @media screen and (max-width: 992px) {
   .sponsor-img {
     flex-basis: calc(50% - 20px);
+    text-align: center;
+  }
+  .sponsor-img img{
+    width: 50%;
   }
 }
 
 @media screen and (max-width: 768px) {
   .sponsor-img {
     flex-basis: calc(50% - 20px);
+    text-align: center;
+  }
+  .sponsor-img img{
+    width: 50%;
   }
   .section-title{
     font-size: 25px;
@@ -68,7 +78,11 @@
     display: block;
   }
   .sponsor-img {
+    text-align: center;
     width: 100%;
+  }
+  .sponsor-img img{
+    width: calc(50% - 20px);
   }
   .section-title{
     font-size: 20px;
