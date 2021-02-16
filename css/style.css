@@ -67,8 +67,8 @@ section{
   display: flex;
   justify-content: flex-start;
 }
-.list-deploy{
-  flex-basis: 40%;
+.deploy-list{
+  flex-basis: 30%;
   align-self: flex-start;
 }
 ul{
@@ -81,6 +81,23 @@ ul li{
 }
 ul li a{
   text-decoration: none;
+  color: #5b6987;
+}
+.deploy-boxes{
+  display: flex;
+  flex-basis: 70%;
+  flex-wrap: wrap;
+}
+.deploy-box{
+  padding: 30px 30px;
+}
+.box-title{
+  margin: 15px 0;
+  color: #031b4e;
+}
+.box-par{
+  max-width: 60%;
+  color: #5b6987;
 }
 /* responsive */
 @media screen and (max-width: 992px) {
@@ -103,7 +120,8 @@ ul li a{
   }
   .section-title{
     font-size: 25px;
-  }
+  }  
+
 }
 @media screen and (max-width: 576px) {
   .sponsors {
@@ -119,4 +137,5 @@ ul li a{
   .section-title{
     font-size: 20px;
   }
+
 }
