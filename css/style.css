@@ -4,3 +4,70 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* main */
+/* section business */
+#innovative-business{
+  height: 30vh;
+  background-color: #f3f5f9;
+}
+.section-title{
+  color: grey;
+  margin: 40px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.container{
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+.sponsors{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.sponsor-img{
+  flex-basis: calc((100% / 6) -20px);
+  align-content: center;
+}
+.sponsor-img:not(:last-child){
+  margin-right: 20px;
+}
+
+.sponsor-img img{
+  max-width: 100%;
+}
+.stories{
+  text-align: center;
+  text-decoration: none;
+}
+
+
+
+
+
+
+/* responsive */
+@media screen and (max-width: 992px) {
+  .sponsor-img {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sponsor-img {
+    flex-basis: calc(50% - 20px);
+  }
+  .section-title{
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .sponsor-img {
+    display: block;
+  }
+  .section-title{
+    font-size: 20px;
+  }
+}
