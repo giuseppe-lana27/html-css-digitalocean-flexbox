@@ -64,8 +64,11 @@
   }
 }
 @media screen and (max-width: 576px) {
-  .sponsor-img {
+  .sponsors {
     display: block;
+  }
+  .sponsor-img {
+    width: 100%;
   }
   .section-title{
     font-size: 20px;
